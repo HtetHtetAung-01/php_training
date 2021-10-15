@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  padding: 7px 20px;
+  background: #1010d3;
+  color: #ffffff;
+  border: none;
+}

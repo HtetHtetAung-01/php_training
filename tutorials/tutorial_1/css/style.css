@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+table {
+  border: 4px solid #000000;
+  margin: 0 auto;
+  border-spacing: 0;
+}
+
+.white-box {
+  padding: 35px;
+  background: #ffffff;
+}
+
+.black-box {
+  padding: 35px;
+  background: #000000;
+}
