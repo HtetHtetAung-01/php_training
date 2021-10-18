@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: #f2f2f2;
+  padding: 25px;
+  margin: 10px auto;
+  width: 400px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+input[type=text],
+input[type=password] {
+  margin-bottom: 10px;
+}
+
+.btnLogin {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #6993ff;
+  border: none;
+  color: #ffffff;
+}
+
+.btnLogout {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 3px 20px;
+  background: #6993ff;
+}
