@@ -16,23 +16,13 @@
     <input name="submit" type="submit" class="btn" value="Calculate My Age!">
   </form>
   <?php
-  if (isset($_POST['submit'])) {
-    $dob = $_POST['bdate'];
-    $bday = new DateTime($dob);
-    $age = $bday->diff(new DateTime);
-    echo '<br/>';
-    echo '<b>Your Birth Date: </b>';
-    echo $dob;
-    echo '<br>';
-    echo '<b>Your Age : </b> ';
-    echo $age->y;
-    echo ' Years, ';
-    echo $age->m;
-    echo ' Months, ';
-    echo $age->d;
-    echo ' Days';
-  }
-  ?>
+				if(isset($_POST['submit'])) {
+					$bday = $_POST['bdate'];
+					$today = date('Y-m-d');
+					$diff = date_diff(date_create($bday), date_create($today));
+          echo 'Age is <b>'.$diff->format('%y'). '</b>'; 
+				}
+	?>
 </body>
 
 </html>
