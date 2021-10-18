@@ -12,20 +12,26 @@
   <h1>Tutorial_2</h1>
   <?php
   echo "<p>";
-  for ($i = 1; $i < 6; $i++) {
-    for ($j = $i; $j < 6; $j++)
-      echo "&nbsp;&nbsp;";
-    for ($j = 2 * $i - 1; $j > 0; $j--)
-      echo ("&nbsp;*");
-    echo "<br>";
-  }
-  $n = 6;
-  for ($i = 6; $i > 0; $i--) {
-    for ($j = $n - $i; $j > 0; $j--)
-      echo "&nbsp;&nbsp;";
-    for ($j = 2 * $i - 1; $j > 0; $j--)
-      echo ("&nbsp;*");
-    echo "<br>";
+  $num=6;
+  for($outer=1;$outer<=$num;$outer++) {
+      for($inner=1;$inner<=(2*$num)-1;$inner++) {
+          if($inner>=$num-($outer-1) && $inner<=$num+($outer-1)) {
+              echo "*";
+          } else {
+              echo "&nbsp;&nbsp;";
+          }
+      }
+      echo "</br>";
+  } 
+  for($outer=$num-1;$outer>=1;$outer--) {
+      for($inner=1;$inner<=(2*$num)-1;$inner++) {
+          if($inner>=$num-($outer-1) && $inner<=$num+($outer-1)) {
+              echo "*";
+          } else {
+              echo "&nbsp;&nbsp;";
+          }
+      }
+      echo "</br>";
   }
   echo "</p>";
   ?>
