@@ -1,0 +1,38 @@
+.input-field {
+	border: 1px solid cornflowerblue;
+	border-radius: 10px;
+	width: 25em;
+	padding: .5em 2em 2em 2em;
+	margin-right: 10em;
+}
+
+.qr-field {
+	border: 1px solid cornflowerblue;
+	border-radius: 10px;
+	width: 24em;
+	padding: .5em 2em 2em 2em;
+}
+
+.qrframe {
+	border: 1px solid #ccc;
+	margin-top: 2em;
+}
+
+.wrapper {
+	margin: 0 70px;
+	align-items: center;
+}
+
+.output {
+	display: flex;
+	padding-top: 2em;
+}
+
+.btn-download {
+	display: block;
+	margin: 17px 0;
+}
+
+.btn-submit {
+	width: 100%;
+}
