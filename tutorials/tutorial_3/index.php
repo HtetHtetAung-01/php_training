@@ -12,17 +12,35 @@
 <body>
   <h1>Tutorial_3</h1>
   <form action="index.php" method="post">
-    <input type="date" name="bdate">
+    <input type="date" name="bdate" value="<?php if (!empty($_POST["bdate"])) {
+                                              echo $_POST["bdate"];
+                                            } ?>">
     <input name="submit" type="submit" class="btn" value="Calculate My Age!">
   </form>
   <?php
-				if(isset($_POST['submit'])) {
-					$bday = $_POST['bdate'];
-					$today = date('Y-m-d');
-					$diff = date_diff(date_create($bday), date_create($today));
-          echo 'Age is <b>'.$diff->format('%y'). '</b>'; 
-				}
-	?>
+  $age = "";
+  if (!empty($_POST["bdate"])) {
+    $age = calAge($_POST["bdate"]);
+    echo "<br/><b>Your Age : <b>" . $age;
+  }
+  function calAge($date)
+  {
+    $timestamp = strtotime($date);
+
+    $strTime = array("second", "minute", "hour", "day", "month", "year");
+    $length = array("60", "60", "24", "30", "12", "10");
+
+    $currentTime = time();
+    if ($currentTime >= $timestamp) {
+      $diff = time() - $timestamp;
+      for ($i = 0; $diff >= $length[$i] && $i < count($length) - 1; $i++) {
+        $diff = $diff / $length[$i];
+      }
+      $diff = round($diff);
+      return $diff . " " . $strTime[$i] . "(s)";
+    }
+  }
+  ?>
 </body>
 
 </html>
