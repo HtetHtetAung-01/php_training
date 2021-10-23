@@ -15,8 +15,10 @@
   $password = $_POST['password'];
   if ($id == "admin" && $password == "1111") {
     $_SESSION['auth'] = true;
+    header("location: login_success.php");
+  } else {
+    header("location: login_fail.php");
   }
-  header("location: index.php");
   ?>
 </body>
 

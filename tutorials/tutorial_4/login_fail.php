@@ -13,6 +13,7 @@
   <div class="wrapper">
     <form action="login.php" method="POST">
       <h1>Login Form</h1>
+      <p class="error_message">Invalid User ID or Password!</p><br>
       <label for="id">User ID</label><br>
       <input type="text" name="id" id="id"><br>
       <label for="password">Password</label><br>

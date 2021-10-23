@@ -35,3 +35,10 @@ input[type=password] {
   padding: 3px 20px;
   background: #6993ff;
 }
+
+.error_message {
+  background-color: #f5c6cb;
+  color: #721c24;
+  padding: 13px;
+  display: inline-block;
+}
