@@ -1,3 +1,3 @@
 <?php
-  $conn = new mysqli("localhost", "root", "my1234", "crud");
+  $conn = new mysqli("localhost", "root", "1234", "crud");
 ?>

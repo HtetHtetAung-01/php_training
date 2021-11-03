@@ -24,12 +24,12 @@ if ($_POST['submit'] == 'Send') {
     $mail->isSMTP(); // send as HTML
     $mail->Host = "smtp.gmail.com"; // SMTP servers
     $mail->SMTPAuth = true; // turn on SMTP authentication
-    $mail->Username = "yourgmail@gmail.com"; // Your mail
-    $mail->Password = 'yourgmailpassword'; // Your password mail
+    $mail->Username = "htethtet.ucsy16@gmail.com"; // Your mail
+    $mail->Password = 'Thaebbijyonedongchanikon7'; // Your password mail
     $mail->Port = 587; //specify SMTP Port
     $mail->SMTPSecure = 'tls';
     $mail->setFrom($_POST['email'], $_POST['name']);
-    $mail->addAddress('yourgmail@gmail.com'); // Your mail
+    $mail->addAddress('htethtet.ucsy16@gmail.com'); // Your mail
     $mail->addReplyTo($_POST['email'], $_POST['name']);
     $mail->isHTML(true);
     $mail->Subject = 'Form Submission:' . $_POST['subject'];

@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
 			</div>
 			<?php
 			if (!isset($filename)) {
-				$filename = "author";
+				$filename = "hello";
 			}
 			?>
 			<div class="qr-field">

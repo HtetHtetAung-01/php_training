@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "my1234", "crud");
+$connect = mysqli_connect("localhost", "root", "1234", "crud");
 $query = "SELECT * FROM account";
 $result = mysqli_query($connect, $query);
 $chart_data = '';
